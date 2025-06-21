@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио | Vershina Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="topImg">
+      <img src="images/Group 4.svg" alt="">
+      <img class = "left" src="images/textalign-left.svg" alt="">
+  </div>
+    <!-- Слайдер -->
+    <div id="portfolio-slider">
+      <div class="slider-title">Дизайн-проекты студии</div>
+    </div>
+    <!-- Фильтр -->
+    <div class="portfolio-filter">
+      <button class="portfolio-filter-btn active" data-type="flat">Квартиры</button>
+      <button class="portfolio-filter-btn" data-type="house">Дома</button>
+      <button class="portfolio-filter-btn" data-type="commercial">Коммерция</button>
+    </div>
+    <!-- Карточки работ -->
+    <div class="portfolio-cards" id="portfolioCards"></div>
+    <!-- Блок знакомства -->
+    <section class="meeting-block">
+      <div class="meeting-title">
+        Давайте познакомимся<br>
+        и обсудим <span class="meeting-title-italic">идеи для дизайна интерьера</span><br>
+        <span class="meeting-title-row">
+          вашего пространства
+          <button class="vershina-btn">Оставить заявку <span class="vershina-btn-dot">•</span></button>
+        </span>
+      </div>
+    </section>
+    <section class="portfolio-advantages-section">
+      <div class="portfolio-advantages-list">
+        <div class="portfolio-adv">
+          <div class="portfolio-adv-num">01</div>
+          <div class="portfolio-adv-text">реализовали более<br>30 проектов</div>
+        </div>
+        <div class="portfolio-adv">
+          <div class="portfolio-adv-num">02</div>
+          <div class="portfolio-adv-text">не предлагаем<br>шаблонные решения</div>
+        </div>
+        <div class="portfolio-adv">
+          <div class="portfolio-adv-num">03</div>
+          <div class="portfolio-adv-text">детально прорабатываем<br>зоны хранения вещей</div>
+        </div>
+        <div class="portfolio-adv">
+          <div class="portfolio-adv-num">04</div>
+          <div class="portfolio-adv-text">работаем более 3-х лет</div>
+        </div>
+      </div>
+    </section>
+    <!-- Этапы работы -->
+    <section class="work-steps-section">
+      <h2 class="work-steps-title">Этапы работы</h2>
+      <div class="work-steps-subtitle">
+        элемент, на котором строится работа в студии — доверительные отношения.<br>
+        на каждом этапе: от первой встречи до общения за чашечкой чая в квартире с уже выполненным ремонтом
+      </div>
+      <div class="work-steps-flex">
+        <ol class="work-steps-list" id="workStepsList"></ol>
+        <div class="work-steps-image" id="workStepsImage"></div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section class="faq-section">
+      <h2 class="faq-title">Ответы на частые вопросы</h2>
+      <ul class="faq-list" id="faqList"></ul>
+    </section>
+    <!-- Отзывы -->
+    <section class="reviews-section">
+      <div class="reviews-title">Отзывы</div>
+      <div class="reviews-marquee-outer">
+        <div class="reviews-marquee-track" id="reviewsMarqueeTrack"></div>
+      </div>
+    </section>
+    
+    <!-- Футер -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-col footer-col-logo">
+          <div class="footer-logo-row">
+            <div class="l"> <img src="lastblock/вершина.svg" alt="Vershina" class="footer-vershina">
+              <img src="lastblock/дизайн.svg" alt="interior design" class="footer-design">
+              <img style="height: 27px;" src="lastblock/отпечаток.svg" alt="Отпечаток" class="footer-fingerprint">
+             </div>
+            <img style="height: 100px;" src="lastblock/лого.svg" alt="Лого" class="footer-logo-cross">
+          </div>
+          <div class="footer-desc">Дом – это не только пространство для жизни, это место, где мы испытываем радость, переживаем трудности, встречаем гостей, готовим и отдыхаем. Мы создаём интерьеры, которые отражают индивидуальность каждого клиента.</div>
+        </div>
+        <div class="footer-col footer-col-menu-center">
+          <div class="footer-menu-row">
+            <div class="footer-menu">
+              <a href="#" class="footer-link">Услуги</a>
+              <a href="#" class="footer-link">Портфолио</a>
+              <a href="#" class="footer-link">О нас</a>
+            </div>
+            <div class="footer-menu">
+              <a href="#" class="footer-link">Блог</a>
+              <a href="#" class="footer-link">Философия</a>
+              <a href="#" class="footer-link">Контакты</a>
+            </div>
+          </div>
+          <a href="#" class="footer-link policy">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-col footer-col-contacts">
+          <div class="footer-contacts">
+            <div>+7 (383) 361-06-28 | vershina@mail.ru</div>
+            <div>620146, г. Екатеринбург, г Екатеринбург,</div>
+            <div>ул Волгоградская, д. 178, офис 11</div>
+          </div>
+          <div class="footer-socials">
+            <a href="https://www.youtube.com/watch?v=U06jlgpMtQs" target="_blank"><img src="lastblock/Telegram.svg" alt="Telegram"></a>
+            <a href="https://www.youtube.com/watch?v=U06jlgpMtQs" target="_blank"><img src="lastblock/Whatsapp.svg" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/watch?v=U06jlgpMtQs" target="_blank"><img src="lastblock/Vk.svg" alt="Vk"></a>
+            <a href="https://www.youtube.com/watch?v=U06jlgpMtQs" target="_blank"><img src="lastblock/Instagram.svg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/watch?v=U06jlgpMtQs" target="_blank"><img src="lastblock/Youtube.svg" alt="Youtube"></a>
+            <a href="https://www.youtube.com/watch?v=U06jlgpMtQs" target="_blank"><img src="lastblock/Facebook.svg" alt="Facebook"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">2025 все права защищены</div>
+  </div>
+  <script src="script.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html> 

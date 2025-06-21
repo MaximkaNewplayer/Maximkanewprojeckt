@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Все блоки | Vershina Art</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="topImg">
+      <img src="images/Group 4.svg" alt="">
+      <img class="left" src="images/textalign-left.svg" alt="">
+    </div>
+
+ 
+    <section class="blog-section">
+      <div class="blog-slider-row">
+        <div style="margin-left: 100px;" class="wrapper">
+          <div class="main-content" style="flex: 1;
+          min-width: 320px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;">
+            <div class="main-title" style="font-size: 48px; font-weight: 400; margin-bottom: 32px; line-height: 1.1;">Дом — продолжение<br>личности. Место силы<br>человека</div>
+            <div class="main-subtitle" style="font-size: 18px; font-weight: 400; margin-bottom: 24px; color: #888;">Надежда Бойко<br><span style="font-size: 15px; color: #bbb;">главный дизайнер, создатель студии</span></div>
+            <button class="main-btn" style="padding: 16px 32px; font-size: 18px; border-radius: 4px; background: #111; color: #fff; border: none; cursor: pointer; width: 260px; text-align: left;">Обсудить проект <span class="main-btn-arrow">→</span></button>
+          </div>
+        </div>
+        <button class="blog-next-btn" id="mainSliderNext">
+          <span class="blog-next-btn-text">Дальше</span>
+          <svg class="blog-next-btn-circle" width="110" height="110" viewBox="0 0 110 110">
+            <circle class="blog-next-btn-circle-bg" cx="55" cy="55" r="52" stroke="#ddd" stroke-width="2" fill="none"/>
+            <path class="blog-next-btn-circle-half" d="M 3 55 A 52 52 0 0 1 107 55" stroke="#111" stroke-width="3" fill="none"/>
+          </svg>
+        </button>
+        <div class="blog-slider-wrapper">
+          <div class="blog-slider" id="mainSlider"></div>
+        </div>
+      </div>
+    </section>
+ 
+  <section class="team-slider-section" style="margin-top: 80px; width: 80vw; max-width: 80vw; margin-left: auto; margin-right: auto; overflow: visible; position: relative;">
+      <div style="display: flex; align-items: center; justify-content: center; position: relative; z-index: 1;">
+        <button class="blog-next-btn" id="teamSliderPrev" style="margin-right: 24px;">
+          <span class="blog-next-btn-text">Назад</span>
+          <svg class="blog-next-btn-circle" width="110" height="110" viewBox="0 0 110 110">
+            <circle class="blog-next-btn-circle-bg" cx="55" cy="55" r="52" stroke="#ddd" stroke-width="2" fill="none"/>
+            <path class="blog-next-btn-circle-half" d="M 107 55 A 52 52 0 0 0 3 55" stroke="#111" stroke-width="3" fill="none"/>
+          </svg>
+        </button>
+        <div class="team-slider-wrapper" style="overflow: hidden; flex: 1; padding-left: 100px; padding-right: 100px; box-sizing: border-box; position: relative;">
+          <div class="team-slider-bar-bg" style="position: absolute; left: -100px; right: -100px; bottom: 44%; height: 80px; background: #ededed; z-index: 1; pointer-events: none;"></div>
+          <div class="team-slider" id="teamSlider" style="display: flex; gap: 48px; transition: transform 0.6s cubic-bezier(.4,0,.2,1); position: relative; z-index: 3;"></div>
+        </div>
+        <button class="blog-next-btn" id="teamSliderNext" style="margin-left: 24px;">
+          <span class="blog-next-btn-text">Вперед</span>
+          <svg class="blog-next-btn-circle" width="110" height="110" viewBox="0 0 110 110">
+            <circle class="blog-next-btn-circle-bg" cx="55" cy="55" r="52" stroke="#ddd" stroke-width="2" fill="none"/>
+            <path class="blog-next-btn-circle-half" d="M 3 55 A 52 52 0 0 1 107 55" stroke="#111" stroke-width="3" fill="none"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+ 
+    <section class="why-main-section" style="margin: 64px 0 0 0; text-align: center;">
+      <div class="why-main-text">
+        Каждый заказчик становится для нас особенным.<br>
+        <span class="why-main-italic">мы изучаем не просто ваши интересы,</span> а ваш стиль жизни —<br>
+        как вы проводите  каждый свой день
+      </div>
+    </section>
+ 
+    <div class="why-section">
+      <div class="why-left">
+        <h2 class="why-title">ПОЧЕМУ СТОИТ<br><span class="why-title-indent">ДОВЕРИТЬ</span><br>ДИЗАЙН-ПРОЕКТ<br><span class="why-title-indent">НАМ?</span></h2>
+        <div class="why-play-row">
+          <div class="why-play">
+            <button class="why-play-btn">
+              <span class="why-play-icon"></span>
+            </button>
+            <img src="slider/6.svg" alt="Вектор" class="why-play-svg">
+          </div>
+          <img src="slider/5.png" alt="Отпечаток" class="why-fingerprint">
+        </div>
+        <div class="why-desc">Чтобы пространство получилось не просто красивым, а эксклюзивным для каждого конкретного человека или семьи, мы погружаемся в проекты всецело и с душой</div>
+      </div>
+      <div class="why-divider"></div>
+      <div class="why-right">
+        <div class="why-advantage">
+          <div class="why-num">01</div>
+          <div class="why-adv-title">Камерность</div>
+          <div class="why-adv-text">Отличаемся не шаблонным подходом к работе, как психологи изучая стиль и философию жизни заказчика</div>
+        </div>
+        <div class="why-advantage">
+          <div class="why-num">02</div>
+          <div class="why-adv-title">Умение слышать</div>
+          <div class="why-adv-text">Предлагаем проект с учетом финансовых возможностей и творческих идей</div>
+        </div>
+        <div class="why-advantage">
+          <div class="why-num">03</div>
+          <div class="why-adv-title">Уважение</div>
+          <div class="why-adv-text">Стараемся понять заказчика с первого слова и точно превратить картинку из головы в визуальный ряд</div>
+        </div>
+        <div class="why-advantage">
+          <div class="why-num">04</div>
+          <div class="why-adv-title">Опыт</div>
+          <div class="why-adv-text">За 3 года на рынке успели реализовать более 30 проектов</div>
+        </div>
+        <div class="why-advantage">
+          <div class="why-num">05</div>
+          <div class="why-adv-title">Скорость</div>
+          <div class="why-adv-text">На реализацию одного дизайн-проекта закладываем до 2-х месяцев</div>
+        </div>
+        <div class="why-advantage">
+          <div class="why-num">06</div>
+          <div class="why-adv-title">Внимание к деталям</div>
+          <div class="why-adv-text">Создаем практичные пространства с детальной проработкой зон хранения вещей</div>
+        </div>
+        <img src="slider/5.png" alt="Отпечаток" class="why-fingerprint why-fingerprint-right">
+      </div>
+    </div>
+ 
+    <section class="work-steps-section">
+      <h2 class="work-steps-title">Этапы работы</h2>
+      <div class="work-steps-subtitle">
+        элемент, на котором строится работа в студии — доверительные отношения.<br>
+        на каждом этапе: от первой встречи до общения за чашечкой чая в квартире с уже выполненным ремонтом
+      </div>
+      <div class="work-steps-flex">
+        <ol class="work-steps-list" id="workStepsList"></ol>
+        <div class="work-steps-image" id="workStepsImage"></div>
+      </div>
+    </section>
+ 
+    <section class="reviews-section" style="margin-top: 60px;">
+      <div class="reviews-title">Отзывы</div>
+      <div class="reviews-marquee-outer">
+        <div class="reviews-marquee-track" id="reviewsMarqueeTrack"></div>
+      </div>
+    </section>
+ 
+    <div class="meeting-block">
+      <div class="meeting-title">
+        Давайте познакомимся<br>
+        и обсудим <span class="meeting-title-italic">идеи для дизайна интерьера</span><br>
+        <span class="meeting-title-row">
+          вашего пространства
+          <button class="vershina-btn">Оставить заявку <span class="vershina-btn-dot">•</span></button>
+        </span>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-col footer-col-logo">
+          <div class="footer-logo-row">
+            <div class="l"> <img src="lastblock/вершина.svg" alt="Vershina" class="footer-vershina">
+              <img src="lastblock/дизайн.svg" alt="interior design" class="footer-design">
+              <img style="height: 27px;" src="lastblock/отпечаток.svg" alt="Отпечаток" class="footer-fingerprint">
+             </div>
+            <img style="height: 100px;" src="lastblock/лого.svg" alt="Лого" class="footer-logo-cross">
+          </div>
+          <div class="footer-desc">Дом – это не только пространство для жизни, это место, где мы испытываем радость, переживаем трудности, встречаем гостей, готовим и отдыхаем. Мы создаём интерьеры, которые отражают индивидуальность каждого клиента.</div>
+        </div>
+        <div class="footer-col footer-col-menu-center">
+          <div class="footer-menu-row">
+            <div class="footer-menu">
+              <a href="#" class="footer-link">Услуги</a>
+              <a href="#" class="footer-link">Портфолио</a>
+              <a href="#" class="footer-link">О нас</a>
+            </div>
+            <div class="footer-menu">
+              <a href="#" class="footer-link">Блог</a>
+              <a href="#" class="footer-link">Философия</a>
+              <a href="#" class="footer-link">Контакты</a>
+            </div>
+          </div>
+          <a href="#" class="footer-link policy">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-col footer-col-contacts">
+          <div class="footer-contacts">
+            <div>+7 (383) 361-06-28 | vershina@mail.ru</div>
+            <div>620146, г. Екатеринбург, г Екатеринбург,</div>
+            <div>ул Волгоградская, д. 178, офис 11</div>
+          </div>
+          <div class="footer-socials">
+          <a href="#" target="_blank"><img src="lastblock/Telegram.svg" alt="Telegram"></a>
+          <a href="#" target="_blank"><img src="lastblock/Whatsapp.svg" alt="Whatsapp"></a>
+          <a href="#" target="_blank"><img src="lastblock/Vk.svg" alt="Vk"></a>
+          <a href="#" target="_blank"><img src="lastblock/Instagram.svg" alt="Instagram"></a>
+          <a href="#" target="_blank"><img src="lastblock/Youtube.svg" alt="Youtube"></a>
+          <a href="#" target="_blank"><img src="lastblock/Facebook.svg" alt="Facebook"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">2025 все права защищены</div>
+  </div>
+ 
+  <script src="script.js"></script>
+  <script src="all-blocks.js"></script>
+</body>
+</html> 

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо модальных окон - Vershina Art</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f8f9fa;
+            min-height: 100vh;
+        }
+        
+        .demo-title {
+            font-family: Inter, sans-serif;
+            font-size: 48px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 16px;
+            color: #333;
+        }
+        
+        .demo-subtitle {
+            font-family: Inter, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #666;
+        }
+        
+        .demo-section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .demo-section h2 {
+            font-family: Inter, sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 16px;
+            color: #333;
+        }
+        
+        .demo-section p {
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 24px;
+        }
+        
+        .demo-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .demo-btn {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .demo-btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .demo-btn.secondary {
+            background: transparent;
+            color: #000;
+            border: 2px solid #000;
+        }
+        
+        .demo-btn.secondary:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-card h3 {
+            font-family: Inter, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .feature-card p {
+            font-family: Inter, sans-serif;
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+        
+        .scaling-demo {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .scaling-demo h2,
+        .scaling-demo p {
+            color: white;
+        }
+        
+        .screen-info {
+            font-family: Inter, sans-serif;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .demo-container {
+                padding: 20px 16px;
+            }
+            
+            .demo-title {
+                font-size: 36px;
+            }
+            
+            .demo-section {
+                padding: 24px 20px;
+            }
+            
+            .demo-buttons {
+                flex-direction: column;
+            }
+            
+            .demo-btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1 class="demo-title">Демо модальных окон</h1>
+        <p class="demo-subtitle">Тестирование новой системы модальных окон с навигацией и анимациями</p>
+        
+        <div class="demo-section">
+            <h2>🚀 Модальное окно заявки</h2>
+            <p>Многошаговая форма с прогресс-баром, навигацией и анимациями. Поддерживает клавиатурную навигацию (стрелки влево/вправо).</p>
+            
+            <div class="demo-buttons">
+                <button class="demo-btn" onclick="openApplicationModal()">Открыть форму заявки</button>
+                <button class="demo-btn secondary" onclick="openContactsModal()">Контакты</button>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Многошаговая форма</h3>
+                    <p>3 шага: личная информация, детали проекта, дополнительные данные</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Прогресс-бар</h3>
+                    <p>Анимированный индикатор прогресса с эффектом мерцания</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Навигация</h3>
+                    <p>Кнопки назад/вперед с анимациями наведения</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Валидация</h3>
+                    <p>Проверка обязательных полей с визуальной обратной связью</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section scaling-demo">
+            <h2>📱 Пропорциональное масштабирование</h2>
+            <p>Весь контент автоматически масштабируется для экранов от 390px до 1950px</p>
+            
+            <div class="screen-info" id="screenInfo">
+                Размер экрана: <span id="screenSize"></span>
+            </div>
+            
+            <div style="margin-top: 24px;">
+                <button class="demo-btn" onclick="window.location.href='index.html'">Вернуться на главную</button>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>⚡ Особенности реализации</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Анимации</h3>
+                    <p>Плавные переходы с cubic-bezier, эффекты наведения и backdrop-filter</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Адаптивность</h3>
+                    <p>Полная адаптация под мобильные устройства и планшеты</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Сохранение данных</h3>
+                    <p>Заявки сохраняются в localStorage и window.applicationForms</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Уведомления</h3>
+                    <p>Красивые toast-уведомления вместо стандартных alert</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Инициализация системы модальных окон
+        document.addEventListener('DOMContentLoaded', () => {
+            // Инициализируем массив заявок
+            if (!window.applicationForms) {
+                window.applicationForms = [];
+                
+                // Попытка загрузить из localStorage
+                try {
+                    const saved = localStorage.getItem('vershina_applications');
+                    if (saved) {
+                        window.applicationForms = JSON.parse(saved);
+                    }
+                } catch (e) {
+                    console.warn('Не удалось загрузить заявки из localStorage:', e);
+                }
+            }
+            
+            // Создаем модальные окна
+            if (!document.getElementById('applicationModal')) {
+                createApplicationModal();
+            }
+            if (!document.getElementById('contactsModal')) {
+                createContactsModal();
+            }
+            
+            // Отображение информации об экране
+            updateScreenInfo();
+            window.addEventListener('resize', updateScreenInfo);
+        });
+        
+        function updateScreenInfo() {
+            const screenSizeElement = document.getElementById('screenSize');
+            if (screenSizeElement) {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+                let scaleInfo = '';
+                
+                if (width <= 390) {
+                    scaleInfo = ' (масштаб 35%)';
+                } else if (width >= 1950) {
+                    scaleInfo = ' (масштаб 100%)';
+                } else {
+                    const scale = Math.round((0.35 + (1 - 0.35) * ((width - 390) / (1950 - 390))) * 100);
+                    scaleInfo = ` (масштаб ${scale}%)`;
+                }
+                
+                screenSizeElement.textContent = `${width}×${height}${scaleInfo}`;
+            }
+        }
+        
+        // Демонстрационные кнопки
+        document.addEventListener('click', function(e) {
+            // Имитируем различные кнопки, которые могут открывать модальные окна
+            if (e.target.textContent.includes('заявку') || 
+                e.target.textContent.includes('обсудить') || 
+                e.target.textContent.includes('заказать')) {
+                e.preventDefault();
+                openApplicationModal();
+            }
+        });
+        
+        console.log('Демо модальных окон загружено. Доступные функции:');
+        console.log('- openApplicationModal() - открыть форму заявки');
+        console.log('- openContactsModal() - открыть контакты');
+        console.log('- window.applicationForms - массив всех заявок');
+    </script>
+</body>
+</html> 

@@ -1,0 +1,35 @@
+{
+  "name": "vershina-art-website",
+  "version": "1.0.0",
+  "description": "Сайт студии дизайна интерьеров Vershina Art",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server -p 8000 -o",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "echo 'Deploy to GitHub Pages or hosting service'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USERNAME/vershina-art-website.git"
+  },
+  "keywords": [
+    "design",
+    "interior",
+    "website",
+    "portfolio",
+    "vershina-art"
+  ],
+  "author": "Vershina Art Studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/USERNAME/vershina-art-website/issues"
+  },
+  "homepage": "https://USERNAME.github.io/vershina-art-website/",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
